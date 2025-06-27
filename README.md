@@ -1,45 +1,46 @@
-# Revit API by KAIWEI
+# Revit マテリアル貼図ツール
 
-## 💡 プロジェクト概要  
-業務効率の向上を目的として、2019年より以下の機能を順次開発しました。
+この Revit アドインは、指定された共有フォルダ内の画像をマテリアルのレンダリングテクスチャとして選択・適用できるツールです。Revit プロジェクト内の既存マテリアルに対して、サムネイル付き UI により視覚的にテクスチャを選択し、サイズ指定とともに簡単に適用できます。
 
-1. Revitファミリライブラリ(201911) 
-2. Revitの自動保存機能(202007)
-3. Revitパターン作成ツール(202108)
-4. Revitマテリアルライブラリ(202110)
+---
 
+## 🛠️ 使用技術
+- C#（.NET Framework）
+- Windows Forms UI
+- Autodesk Revit API
+- Windowsユーザー模倣（Impersonation）
+- GDI+ によるサムネイル生成
 
-## 🔧 技術スタック  
-- C# / RevitAPI
+---
 
+## 📷 ユーザーインターフェース例
 
-## 🖼️ アニメーション  
-### 📌 メインメニュー  
+![image (1)](https://github.com/user-attachments/assets/41cf5c9f-2e97-49b8-bf8b-8e130e6282c9)
 
-
-### 📌 プログラム結果レポート  
-
-![image](https://github.com/user-attachments/assets/14c93805-7f8f-4fee-a2f6-923d803c078f)
-
-![image (4)](https://github.com/user-attachments/assets/ae5443e9-c5ab-43eb-b04d-a36a5ec94cf4)
-
-![image](https://github.com/user-attachments/assets/054db5d0-e807-47a5-a17e-38a704a4515d)
-
-![image](https://github.com/user-attachments/assets/ba1b20f3-763c-4b8c-9930-988f36fec63a)
-
-
-
-## 📁 プロジェクト構成  
-Revit_API
-<br>├── MainMenu.cs # メインプログラム
-<br>├── RCLManager.cs # Revitファミリライブラリ
-<br>├── RMLManager.cs # Revitマテリアルライブラリ
-<br>├── RAutoSave.cs # Revitの自動保存機能
-<br>└── RevitPatternGen.cs # Revitパターン作成ツール
 
 
 ---
 
-## 📌 作者情報
-Developed by KAIWEI | BIMエンジニア + 自動化開発者
+## 🚀 主な機能
+- 共有フォルダからのテクスチャ選択（3階層フォルダ構造対応）
+- サムネイル付きプレビューとマテリアル情報の自動解析
+- Windows 認証によるリモートフォルダへのアクセス
+- Revit のマテリアルに対するテクスチャ貼り付け・スケーリング変更
+- テクスチャ保存先の指定とコピー機能
+- 直感的な UI によるマテリアル選択と状態表示
+
+---
+
+## 📂 プロジェクト構成（抜粋）
+
+| フォルダ / ファイル名 | 説明 |
+|----------------------|------|
+| `RevitMaterialLibrary.cs`        | メインフォーム |
+| `README_ja.md`        | このREADMEの日本語版 |
+
+---
+
+## 💼 担当範囲と学び
+このプロジェクトは UI 設計・Revit API連携・サムネイル処理・Windowsユーザー模倣など、BIMエンジニアリングとプログラミングを融合した総合開発の実践例です。  
+一人で全工程を開発・設計しました。
 
